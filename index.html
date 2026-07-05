@@ -7,7 +7,39 @@
     <title>Library</title>
 </head>
 <body>
-    
+    <table id="books" border="1">
+        <caption>Library Inventory</caption>
+        <tr>
+            <th>S/N</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Page Count</th>
+            <th>Status</th>
+        </tr>
+    </table>
+
+    <button id="new" command="show-modal" commandfor="form">New Book</button>
+
+    <dialog id="form">
+        <form action="#" method="post">
+            <label for="title">Title:
+                <input type="text" name="title" id="title">
+            </label>
+            <br>
+            <label for="author">Author:
+                <input type="text" name="author" id="author">
+            </label>
+            <br>
+            <label for="pages">Page Count:
+                <input type="number" name="pages" id="pages" min="1">
+            </label>
+            <br>
+            <button type="submit" id="submit">Add Book</button>
+        </form>
+
+        <button commandfor="form" command="close">Close</button>
+    </dialog>
+
     <script src="script.js"></script>
 </body>
 </html>
