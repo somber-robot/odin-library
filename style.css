@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: Figtree;
+    /* width: 90vw; */
+    /* margin: auto; */
+}
+
+h1 {
+    color: black;
+    font-family: "Dancing Script";
+    font-size: 5rem;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+#container {
+    border: 1px solid green;
+    display: flex;
+    width: 99.5%;
+}
+
+#cards {
+    border: 1px solid red;
+    width: 41.3rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid black;
+    width: 13rem;
+    height: 8.95rem;
+}
+
+#add-book{
+    width: 13rem;
+    height: 8.95rem;
+}
