@@ -1,45 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Library</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Book List</h1>
     <div id="status-boxes">
-        <div id="not-read"></div>
-        <span>Not Read</span>
-        <div id="read"></div>
-        <span>Read</span>
+      <div id="not-read"></div>
+      <span>Not Read</span>
+      <div id="read"></div>
+      <span>Read</span>
     </div>
     <div id="container">
-        <div id="cards">
-            <button id="add-book">+</button>
-        </div>
+      <div id="cards">
+        <button id="add-book">+</button>
+      </div>
     </div>
 
     <dialog id="dialog">
-            <h2>ADD NEW BOOK</h2>
-            <form id="form">
-                <label for="title-input">TITLE 
-                    <br>
-                    <input type="text" name="title" id="title-input">
-                </label>
-                <label for="author-input">AUTHOR
-                    <br>
-                    <input type="text" name="author" id="author-input">
-                </label>
-                <label for="pages-input">PAGES
-                    <br>
-                    <input type="number" name="pages" id="pages-input" min="1">
-                </label>
-            </form>
-            <button id="new-book">Add</button>
-            <button id="cancel-book">Cancel</button>
+      <h2>ADD NEW BOOK</h2>
+      <form novalidate>
+        <label for="title-input"
+          >TITLE
+          <br />
+          <input type="text" name="title" id="title-input" required />
+        </label>
+        <label for="author-input"
+          >AUTHOR
+          <br />
+          <input type="text" name="author" id="author-input" required />
+        </label>
+        <label for="pages-input"
+          >PAGES
+          <br />
+          <input type="number" name="pages" id="pages-input" min="1" />
+        </label>
+      </form>
+      <button id="new-book">Add</button>
+      <button id="cancel-book">Cancel</button>
+      <p class="error"></p>
     </dialog>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
